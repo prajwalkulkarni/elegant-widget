@@ -1,0 +1,11 @@
+.share_widget{
+    border: none;
+    background-color: white;
+    padding: 2px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.share_widget:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
