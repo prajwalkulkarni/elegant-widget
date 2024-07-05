@@ -1,0 +1,19 @@
+.filter_form{
+
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.filter_form .apply_filters{
+
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: 4px;
+}
+
+.apply_filters:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in-out;
+}

@@ -1,0 +1,30 @@
+.bar_transition{
+    max-height: 200px;
+    position: relative;
+    animation: animateHeight 0.5s forwards  1 ease-in-out;
+}
+.bar_transition .tooltip{
+    padding: 2px;
+    visibility: hidden;
+    position: absolute;
+    top:-8px;
+    left:0;
+    transform: translateY(-100%);
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.bar_transition:hover .tooltip{
+    visibility: visible;
+}
+
+
+@keyframes animateHeight {
+    from{
+        max-height: 0;
+    }
+    to{
+        max-height: 200px;
+    }
+}
