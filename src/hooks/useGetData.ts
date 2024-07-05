@@ -49,7 +49,7 @@ export const useGetData = ({
       try {
         setLoading(true);
         const response = await fetch(
-          `${DATA_ENDPOINT}&q=SELECT * FROM yellow_tripdata_2017_pipe WHERE tpep_pickup_datetime >= '${startDate}' AND tpep_dropoff_datetime <= '${endDate}' LIMIT 200`,
+          `${DATA_ENDPOINT}&q=SELECT * FROM yellow_tripdata_2017_pipe WHERE tpep_pickup_datetime >= '${startDate}' AND tpep_dropoff_datetime <= '${endDate}' ORDER BY total_amount DESC LIMIT 200`,
           {
             signal: abortController.signal,
           }
