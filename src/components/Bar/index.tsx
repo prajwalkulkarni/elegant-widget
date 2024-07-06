@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import "./style.css";
 //Need react import for component testing
 import React from "react";

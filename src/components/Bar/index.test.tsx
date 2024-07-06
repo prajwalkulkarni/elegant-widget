@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { render, screen } from "@testing-library/react";
 import { Bar } from ".";
+//Needed to render the component by testing-library
 import React from "react";
 import { describe, expect, test } from "vitest";
 import userEvent from "@testing-library/user-event";

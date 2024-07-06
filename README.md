@@ -1,6 +1,6 @@
 # Elegant Widget - Visualize fare amount by payment type
 
-It is important for vendors to accept payments in different ways in order to maximize passengers & the yield amount.
+It is important for vendors to accept payments in different ways in order to maximize business revenue by increasing the trip count & therby increasing in yield amount.
 This widget visualizes the total fare amount paid to the vendors by different payment types.
 
 # Table Of Contents
