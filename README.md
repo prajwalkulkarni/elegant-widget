@@ -45,7 +45,7 @@ There are 2 ways to view the implementation:
 
 2.  View the deployed site
 
-- Navigate to [https://elegant-widget.netlify.app/?start_date=2017-01-04&end_date=2017-01-16](https://elegant-widget.netlify.app/?start_date=2017-01-04&end_date=2017-01-16) to view the hosted application.
+- Navigate to [https://elegant-widget.netlify.app/](https://elegant-widget.netlify.app/) to view the hosted application.
 
 ### Language:
 
