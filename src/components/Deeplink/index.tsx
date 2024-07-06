@@ -5,7 +5,7 @@ export const Deeplink = () => {
   const [show, setShow] = useState(false);
   function copy() {
     const value = window.location.href;
-    console.log("Copy triggered");
+
     if (navigator.clipboard) {
       navigator.clipboard.writeText(value);
       setShow(true);

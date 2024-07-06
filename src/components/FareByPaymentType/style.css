@@ -22,6 +22,7 @@
 .data_container .cards_container {
     display: flex;
     padding: 16px;
+    flex-wrap: wrap;
     background-color: white;
     border-radius: 4px;
     gap: 16px;
