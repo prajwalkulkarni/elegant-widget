@@ -1,6 +1,6 @@
 # Elegant Widget - Visualize fare amount by payment type
 
-It is important for vendors to accept payments in different ways in order to maximize business revenue by increasing the trip count & therby increasing in yield amount.
+It is important for vendors to accept payments in different ways in order to maximize business revenue by increasing the trip count & therby increasing yield amount.
 This widget visualizes the total fare amount paid to the vendors by different payment types.
 
 # Table Of Contents
@@ -45,7 +45,7 @@ There are 2 ways to view the implementation:
 
 2.  View the deployed site
 
-- Navigate to to view the hosted application.
+- Navigate to [https://elegant-widget.netlify.app/?start_date=2017-01-04&end_date=2017-01-16](https://elegant-widget.netlify.app/?start_date=2017-01-04&end_date=2017-01-16) to view the hosted application.
 
 ### Language:
 
@@ -63,6 +63,10 @@ I’ve written a custom hook with fetch API to perform the network calls. Since 
 
 I've followed a standard directory structure by clustering components & utilities based on their functionalities.
 UI components are placed under components path along with their corresponding styling. I've used named exports for all the components to avoid ambiguity in imports.
+
+### Testing
+
+I've used `vitest`, `@testing-library/react` and `@testing-library/jest-dom` to test utility functions, hooks and components. Any piece of code requiring more than 1 test is added within a test suite to group related tests together.
 
 ### UI, Accessibilty & Misc
 
