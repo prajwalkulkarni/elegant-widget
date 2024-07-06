@@ -1,30 +1,13 @@
-# React + TypeScript + Vite
+# Elegant Widget - Visualize fare amount by payment type
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is important for vendors to accept payments in different ways in order to maximize passengers & the yield amount.
+This widget visualizes the total fare amount paid to the vendors by different payment types.
 
-Currently, two official plugins are available:
+## Why is this visualization important?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+When catering to a diverse set of passengers, ranging from different age groups to different regions, understanding the amount paid using different payment methods helps in analysing the consumer behavior and helps the vendors to setup the right ways to accept payments.
 
-## Expanding the ESLint configuration
+<b>Example scenario</b>: Jordy is a local taxi driver in Georgia who wants to expand his taxi business across larger part of the country. However, he is not aware of the different payment modes he needs to setup in order to satisfy a large number of passengers.
+In this situation, he can use the elegant-widget to understand the payment pattern based on the payment type and setup only those payment types where the transaction amounts are high, because a high total amount collected through a particular payment type would likely mean that a large number of passengers prefer to pay using the said mode.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Share the widget applied filters

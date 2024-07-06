@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { getFormattedDate } from "../../utils/getFormattedDate";
 import "./style.css";
+import { Deeplink } from "../Deeplink";
 
 const urlParams = new URLSearchParams(window.location.search);
 export const Filters = ({ setFilters }: { setFilters: Function }) => {
@@ -24,25 +25,30 @@ export const Filters = ({ setFilters }: { setFilters: Function }) => {
     );
   };
   return (
-    <form onSubmit={formSubmitHandler} ref={formRef} className="filter_form">
-      <label htmlFor="start_date">Start Date</label>
-      <input
-        type="date"
-        id="start_date"
-        defaultValue={urlParams.get("start_date") ?? "1970-01-01"}
-        name="start_date"
-      />
-      <label htmlFor="end_date">End Date</label>
-      <input
-        type="date"
-        id="end_date"
-        defaultValue={urlParams.get("end_date") ?? getFormattedDate(new Date())}
-        name="end_date"
-        min={urlParams.get("start_date") ?? "1970-01-01"}
-      />
-      <button type="submit" className="apply_filters">
-        Apply Filter
-      </button>
-    </form>
+    <>
+      <form onSubmit={formSubmitHandler} ref={formRef} className="filter_form">
+        <label htmlFor="start_date">Start Date</label>
+        <input
+          type="date"
+          id="start_date"
+          defaultValue={urlParams.get("start_date") ?? "1970-01-01"}
+          name="start_date"
+        />
+        <label htmlFor="end_date">End Date</label>
+        <input
+          type="date"
+          id="end_date"
+          defaultValue={
+            urlParams.get("end_date") ?? getFormattedDate(new Date())
+          }
+          name="end_date"
+          min={urlParams.get("start_date") ?? "1970-01-01"}
+        />
+        <button type="submit" className="apply_filters">
+          Apply Filter
+        </button>
+      </form>
+      <Deeplink />
+    </>
   );
 };
